@@ -1,2 +1,2 @@
 # nlp-tutorials
-Tutorials For Beginners For Natural Language Processing
+Natural Language Processing tutorials for beginners.
