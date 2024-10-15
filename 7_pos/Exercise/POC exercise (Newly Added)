@@ -1,0 +1,30 @@
+1. Tokenization and Word Count 
+Question: Given a sentence, write a Python function that tokenizes the sentence into words and counts the frequency of each word. Ignore punctuation and convert everything to lowercase.
+
+Explanation: Tokenization is the process of splitting a sentence into individual words or tokens. In this exercise, you'll need to ignore punctuation and convert all words to lowercase to ensure case-insensitive counting.
+
+Hint: You can use Python's re library to remove punctuation and the split() method to tokenize. Use a dictionary to store word frequencies.
+
+2. Removing Stopwords
+Question: Write a function that removes stopwords from a given text. You can use the nltk library’s stopword list.
+
+Explanation: Stopwords are common words (like "the", "is", "in") that do not add much meaning to a sentence. In NLP, removing these words helps in focusing on meaningful content.
+
+Hint: Import the stopwords from nltk.corpus. After tokenizing the text, filter out the tokens that are in the stopwords list.
+
+3. Bag of Words (BoW) Representation
+Question: Convert the following sentences into a Bag of Words (BoW) representation:
+
+"NLP is fun"
+"I love learning NLP"
+Explanation: Bag of Words (BoW) is a text representation technique that counts the number of times each word occurs in a document, while ignoring grammar and word order.
+
+Hint: First, tokenize both sentences. Then, create a vocabulary (list of unique words across all sentences). Finally, create vectors for each sentence, where each element corresponds to the frequency of a word from the vocabulary.
+
+4. Named Entity Recognition (NER)
+Question: Using spacy, extract and classify named entities (e.g., persons, organizations, locations) from the following text:
+
+"Google was founded in 1998 by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University."
+Explanation: Named Entity Recognition (NER) is a process where entities like names of people, organizations, and locations are identified from text.
+
+Hint: Install the spacy library and load the pre-trained model (e.g., en_core_web_sm). Use the model’s ner pipeline to identify entities. Then, print out the entities and their types (e.g., "Google" is an ORG, "1998" is a DATE).
