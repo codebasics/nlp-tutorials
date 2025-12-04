@@ -4,6 +4,13 @@ Exercise for Spacy POS tutorial,
    1) Extract all NOUN tokens from this story. You will have to read the file in python first to collect all the text and then extract NOUNs in a python list
    2) Extract all numbers (NUM POS type) in a python list
    3) Print a count of all POS tags in this story
+      for token in doc:
+    if token.pos_ in ["NOUN", "PROPN"]:
+        print(token, "|",token.pos_   )
+    if token.pos_=='NUM':
+        print(token ,"|", token.pos_)
+    count=doc.count_by(spacy.attrs.POS)
+    print(count)
 
 [Solution](https://github.com/codebasics/nlp-tutorials/blob/main/7_pos/Exercise/pos_exercise_solution.ipynb)
 
